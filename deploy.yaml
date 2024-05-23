@@ -1,0 +1,14 @@
+---
+- name: Deploy Spring Boot Application
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+
+  tasks:
+    - name: Copy Docker Compose file
+      copy:
+        src: docker-compose.yaml
+        dest: "docker-compose.yaml"
+
+    - name: Run Docker Compose
+      command: docker-compose up --build -d

@@ -1,0 +1,12 @@
+com\example\ProductManagement\data\dao\ProductDao.class
+com\example\ProductManagement\data\entities\CategoryEntity.class
+com\example\ProductManagement\domain\repositories\ProductRepository.class
+com\example\ProductManagement\ProductManagementApplication.class
+com\example\ProductManagement\domain\model\Category.class
+com\example\ProductManagement\domain\services\ProductService.class
+com\example\ProductManagement\data\entities\ProductEntity.class
+com\example\ProductManagement\domain\repositories\ProductRepositoryImplementation.class
+com\example\ProductManagement\exception\GlobalException.class
+com\example\ProductManagement\domain\model\Product.class
+com\example\ProductManagement\data\dao\CategoryDao.class
+com\example\ProductManagement\controller\ProductController.class

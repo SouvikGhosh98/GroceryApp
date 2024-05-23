@@ -1,0 +1,29 @@
+.category-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.category-box .img-box {
+	height: 60px;
+	margin-bottom: 20px;
+    /* margin-top: 10px; */
+	/* width: 100%; */
+	/* position: relative; */
+    /* border: 2px solid red; */
+}
+.category-box  img {	
+	/* max-width: 100%; */
+    /* border: 2px solid rgb(134, 187, 49); */
+	/* max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0; */
+}
+

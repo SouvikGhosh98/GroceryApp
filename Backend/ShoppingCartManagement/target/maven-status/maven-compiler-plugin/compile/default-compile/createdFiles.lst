@@ -1,0 +1,13 @@
+com\example\ShoppingCartManagement\data\entities\CartEntity.class
+com\example\ShoppingCartManagement\data\dao\CartDao.class
+com\example\ShoppingCartManagement\domain\model\UpdateQuantityReq.class
+com\example\ShoppingCartManagement\domain\repositories\CartRepositoryImplementation.class
+com\example\ShoppingCartManagement\feignClient\ProductClient.class
+com\example\ShoppingCartManagement\domain\services\CartService.class
+com\example\ShoppingCartManagement\domain\repositories\CartRepository.class
+com\example\ShoppingCartManagement\domain\model\GetCartReq.class
+com\example\ShoppingCartManagement\domain\model\ProductServiceResponse.class
+com\example\ShoppingCartManagement\controller\CartController.class
+com\example\ShoppingCartManagement\exception\GlobalException.class
+com\example\ShoppingCartManagement\domain\model\Cart.class
+com\example\ShoppingCartManagement\ShoppingCartManagementApplication.class

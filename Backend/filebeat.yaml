@@ -1,0 +1,62 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /logs/apigatewayservice/app.log
+  fields:
+    service: apigatewayservice
+    log_type: application
+  fields_under_root: true
+
+- type: log
+  paths:
+    - /logs/eurekaserver/app.log
+  fields:
+    service: eurekaserver
+    log_type: application
+  fields_under_root: true
+
+- type: log
+  paths:
+    - /logs/loginservice/app.log
+  fields:
+    service: loginservice
+    log_type: application
+  fields_under_root: true
+
+- type: log
+  paths:
+    - /logs/orderservice/app.log
+  fields:
+    service: orderservice
+    log_type: application
+  fields_under_root: true
+
+- type: log
+  paths:
+    - /logs/otpservice/app.log
+  fields:
+    service: otpservice
+    log_type: application
+  fields_under_root: true
+
+- type: log
+  paths:
+    - /logs/productservice/app.log
+  fields:
+    service: productservice
+    log_type: application
+  fields_under_root: true
+
+- type: log
+  paths:
+    - /logs/cartservice/app.log
+  fields:
+    service: cartservice
+    log_type: application
+  fields_under_root: true
+
+setup.kibana:
+  host: "http://localhost:5601"
+
+output.logstash:
+  hosts: ["localhost:5044"]

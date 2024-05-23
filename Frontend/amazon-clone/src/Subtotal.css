@@ -1,0 +1,88 @@
+
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 500px; */
+  /* height: 100px; */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  font-size: 1rem;
+  
+}
+
+.bill-detail{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #F5F7F8;
+}
+
+.bill-detail h6{
+  font-weight: 700;
+}
+
+.bill-detail p{
+  /* font-weight: 700; */
+  font-size: 0.8rem;
+}
+
+.bill-data {
+/* background: #8f5151; */
+font-size: 0.9rem;
+/* text-align: center; */
+}
+
+.bill-data i{
+  font-weight: 700;
+}
+
+ .bill-data  li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin:0.2rem 0rem;
+}
+
+.bill-data ul {
+  list-style: none;
+}
+
+.bill-data  span{
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.bill-data-name {
+  width: 80%;
+  /* background-color: #846a29; */
+}
+
+
+
+
+
+
+/* .subtotal__gift {
+  display: flex;
+  align-items: center;
+}
+
+.subtotal__gift > input {
+  margin-right: 5px;
+}
+ */
+/* .subtotal > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+} */

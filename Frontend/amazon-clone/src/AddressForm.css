@@ -1,0 +1,107 @@
+:root {
+  --color-gray: #737888;
+  --color-lighter-gray: #e3e5ed;
+  --color-light-gray: #f7f7fa;
+}
+
+/* Resetting box-sizing for all elements */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+/* Ensuring the usage of variable font if supported */
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+.address-form p {
+  color: var(--color-gray);
+}
+
+.address-form hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  border: 0;
+}
+
+.address-container {
+  max-width: 40rem;
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address-form {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.address-form .field {
+  width: 100%;
+  border: 1px solid var(--color-lighter-gray);
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+.address-form .field__label {
+  color: var(--color-gray);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.address-form .field__input {
+  padding: 0.5rem;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.address-form .field:focus-within {
+  border-color: var(--color-gray);
+}
+
+.address-form .fields {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.address-form .fields--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.address-form .fields--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.address-btn {
+  width: 100%;
+}
+
+.address-form .button {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.address-form .button:focus-visible {
+  background-color: #333;
+}

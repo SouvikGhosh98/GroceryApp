@@ -1,0 +1,8 @@
+com\example\OtpManagement\Controller\OtpController.class
+com\example\OtpManagement\data\entities\OtpEntity.class
+com\example\OtpManagement\OtpManagementApplication.class
+com\example\OtpManagement\domain\model\GetOtpRes.class
+com\example\OtpManagement\domain\services\EmailOtpService.class
+com\example\OtpManagement\domain\repositories\OtpRepositoryImplementation.class
+com\example\OtpManagement\data\dao\OtpDao.class
+com\example\OtpManagement\domain\repositories\OtpRepository.class

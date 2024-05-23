@@ -1,0 +1,12 @@
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\data\dao\CategoryDao.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\domain\model\Product.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\controller\ProductController.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\domain\services\ProductService.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\exception\GlobalException.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\data\entities\ProductEntity.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\domain\repositories\ProductRepository.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\ProductManagementApplication.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\data\entities\CategoryEntity.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\data\dao\ProductDao.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\domain\model\Category.java
+D:\SPE\Backend\ProductManagement\src\main\java\com\example\ProductManagement\domain\repositories\ProductRepositoryImplementation.java
