@@ -5,7 +5,7 @@ pipeline {
         DOCKERHUB_USERNAME = 'souvikiiitb'
         DOCKERHUB_PASSWORD = 'electronicscity@2023'
         IMAGE_NAME_PREFIX = 'souvikiiitb/speproject'
-        GITHUB_REPO_URL='https://github.com/Pappu98/SPE-MajorProject.git'
+        GITHUB_REPO_URL='https://github.com/Pappu98/GroceryApp.git'
     }
 
     stages {
