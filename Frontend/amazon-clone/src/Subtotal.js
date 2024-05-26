@@ -73,9 +73,9 @@ function Subtotal({newAddress, totalPrice, orderStatus, selectedAddressId}) {
               <div><h6>Cancelation Policy</h6></div>
               <p>Orders cannot be cancelled once packed for delivery. In case of unexpected delays, a refund will be provided, if applicable.</p>
             </div>
-            <p>
+            {/* <p>
               Subtotal ({basket.length} items): <strong>{value}</strong>
-            </p>
+            </p> */}
           </>
         )}
         decimalScale={2}

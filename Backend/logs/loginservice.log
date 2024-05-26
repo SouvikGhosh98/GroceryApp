@@ -7,3 +7,9 @@
 23-05-2024 19:15:40.743 [main] INFO  -c.e.L.LoginManagementApplicationTests - Starting LoginManagementApplicationTests using Java 17.0.11 with PID 22692 (started by SOUVIK GHOSH in D:\SPE-MajorProject\Backend\LoginManagement)
 23-05-2024 19:15:40.748 [main] INFO  -c.e.L.LoginManagementApplicationTests - No active profile set, falling back to 1 default profile: "default"
 23-05-2024 19:15:47.748 [main] INFO  -c.e.L.LoginManagementApplicationTests - Started LoginManagementApplicationTests in 7.476 seconds (process running for 9.234)
+25-05-2024 00:18:46.092 [main] INFO  -c.e.L.LoginManagementApplication - Starting LoginManagementApplication using Java 21.0.1 with PID 24624 (D:\GroceryApp\Backend\LoginManagement\target\classes started by SOUVIK GHOSH in D:\GroceryApp\Backend\LoginManagement)
+25-05-2024 00:18:46.096 [main] INFO  -c.e.L.LoginManagementApplication - No active profile set, falling back to 1 default profile: "default"
+25-05-2024 00:18:53.088 [main] INFO  -c.e.L.LoginManagementApplication - Started LoginManagementApplication in 7.626 seconds (process running for 10.273)
+25-05-2024 10:22:01.360 [main] INFO  -c.e.L.LoginManagementApplication - Starting LoginManagementApplication using Java 21.0.1 with PID 14788 (D:\GroceryApp\Backend\LoginManagement\target\classes started by SOUVIK GHOSH in D:\GroceryApp\Backend\LoginManagement)
+25-05-2024 10:22:01.364 [main] INFO  -c.e.L.LoginManagementApplication - No active profile set, falling back to 1 default profile: "default"
+25-05-2024 10:22:10.705 [main] INFO  -c.e.L.LoginManagementApplication - Started LoginManagementApplication in 10.863 seconds (process running for 13.45)
