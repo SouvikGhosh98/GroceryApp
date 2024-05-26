@@ -18,17 +18,70 @@ pipeline {
         }
 
         stage('Build Services') {
-            parallel {                
-                stage('Build Frontend') {
+            parallel {
+                stage('Build Product Service') {
                     steps {
                         script {
-                            dir('./Frontend/amazon-clone') {
-                                sh 'npm install'
-                                sh 'npm run build'
+                            dir('./Backend/ProductManagement') {
+                                sh 'mvn clean install'
                             }
                         }
                     }
                 }
+                stage('Build Cart Service') {
+                    steps {
+                        script {
+                            dir('./Backend/ShoppingCartManagement') {
+                                sh 'mvn clean install'
+                            }
+                        }
+                    }
+                }
+                stage('Build OTP Service') {
+                    steps {
+                        script {
+                            dir('./Backend/OtpManagement') {
+                                sh 'mvn clean install'
+                            }
+                        }
+                    }
+                }
+                stage('Build Login Service') {
+                    steps {
+                        script {
+                            dir('./Backend/LoginManagement') {
+                                sh 'mvn clean install'
+                            }
+                        }
+                    }
+                }
+                stage('Build Order Service') {
+                    steps {
+                        script {
+                            dir('./Backend/OrderManagement') {
+                                sh 'mvn clean install'
+                            }
+                        }
+                    }
+                }
+                stage('Build API Gateway Service') {
+                    steps {
+                        script {
+                            dir('./Backend/API-GATEWAY/API-GATEWAY') {
+                                sh 'mvn clean install'
+                            }
+                        }
+                    }
+                }
+                stage('Build Eureka Server') {
+                    steps {
+                        script {
+                            dir('./Backend/EurekaServer/EurekaServer') {
+                                sh 'mvn clean install'
+                            }
+                        }
+                    }
+                }                
             }
         }
         stage('Build and Push Images') {
