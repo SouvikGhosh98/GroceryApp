@@ -84,12 +84,12 @@ function Subtotal({newAddress, totalPrice, orderStatus, selectedAddressId}) {
         thousandSeparator={true}
         prefix={"$"}
       />
-
-      {/* Button to proceed to checkout */}
-      <div className="bill-detail p-0 mt-4">
-        {/* Add onClick event handler to call handleProceedToCheckout */}
+      
+      {orderPlacedAlert===0 &&
+      <div className="bill-detail p-0 mt-4">        
         <button className="button" onClick={handleProceedToCheckout}>Proceed to Checkout</button>
       </div>
+      }
       {orderPlacedAlert===1 && <CustomAlert message="Order placed successfully!" />}    
     </div>
   );

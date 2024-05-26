@@ -20,7 +20,7 @@ public class EmailOtpService {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("projectt575@gmail.com");
         message.setTo(email);
-        message.setText("Your otp for consent approval is " + Integer.toString(otp));
+        message.setText("Your OTP to login is " + Integer.toString(otp));
         message.setSubject(sub);
         mailSender.send(message);
     }

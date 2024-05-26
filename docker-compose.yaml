@@ -50,7 +50,7 @@ services:
   loginservice:
     image: souvikiiitb/speproject-loginservice:latest
     ports:
-      - "8085:8080"
+      - "8085:8085"
     depends_on:
       - otpservice
     environment:
@@ -76,6 +76,7 @@ services:
       - eureka.client.serviceUrl.defaultZone=http://eurekaserver:8761/eureka/
       - productservice.url=http://productservice:8081/product-service
       - cartservice.url=http://cartservice:8083/cart-service
+      - loginservice.url=http://loginservice:8085/login-service
     networks:
       - springboot-mysql-network
 

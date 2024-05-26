@@ -1,8 +1,8 @@
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\services\EmailOtpService.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\model\GetOtpRes.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\Controller\OtpController.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\data\entities\OtpEntity.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\data\dao\OtpDao.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\OtpManagementApplication.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\repositories\OtpRepository.java
-D:\SPE\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\repositories\OtpRepositoryImplementation.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\data\dao\OtpDao.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\services\EmailOtpService.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\Controller\OtpController.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\repositories\OtpRepository.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\model\GetOtpRes.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\domain\repositories\OtpRepositoryImplementation.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\OtpManagementApplication.java
+D:\GroceryApp\Backend\OtpManagement\src\main\java\com\example\OtpManagement\data\entities\OtpEntity.java

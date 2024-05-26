@@ -16,7 +16,9 @@ com\example\OrderManagement\domain\repositories\OrderRepositoryImplementation.cl
 com\example\OrderManagement\feignClient\ProductClient.class
 com\example\OrderManagement\data\dao\AddressDao.class
 com\example\OrderManagement\domain\model\DeleteCartReq.class
+com\example\OrderManagement\domain\services\EmailService.class
 com\example\OrderManagement\data\entities\AddressEntity.class
+com\example\OrderManagement\feignClient\LoginClient.class
 com\example\OrderManagement\data\dao\OrderHistoryDao.class
 com\example\OrderManagement\domain\model\PlacedOrder.class
 com\example\OrderManagement\domain\services\OrderService.class

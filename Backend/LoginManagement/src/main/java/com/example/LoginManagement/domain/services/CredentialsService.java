@@ -54,4 +54,11 @@ public class CredentialsService {
 
          return -1;
     }
+
+    public String getEmailId(int id) {
+        CredentialsEntity credentialsEntity=new CredentialsEntity();
+        credentialsEntity=credentialsDao.findById(id).orElse(null);
+
+        return credentialsEntity.getEmailId();
+    }
 }

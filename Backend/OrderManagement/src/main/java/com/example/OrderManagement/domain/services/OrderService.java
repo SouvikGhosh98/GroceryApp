@@ -3,6 +3,7 @@ package com.example.OrderManagement.domain.services;
 import com.example.OrderManagement.domain.model.*;
 import com.example.OrderManagement.domain.repositories.OrderRepository;
 import com.example.OrderManagement.feignClient.CartClient;
+import com.example.OrderManagement.feignClient.LoginClient;
 import com.example.OrderManagement.feignClient.ProductClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class OrderService {
 
+    private final EmailService emailService;
     private final OrderRepository orderRepository;
 
     @Autowired
@@ -22,6 +24,9 @@ public class OrderService {
 
     @Autowired
     private ProductClient productClient;
+
+    @Autowired
+    private LoginClient loginClient;
 
     public int placeOrder(PlaceOrderReq placeOrderReq) {
 
@@ -33,6 +38,10 @@ public class OrderService {
         deleteCartReq.setUserId(placeOrderReq.getAddAddressReq().getUserId());
         deleteCartReq.setNewQuantity(-1);
         cartClient.deleteCartItems(deleteCartReq);
+
+        String emailId= loginClient.getEmailId(placeOrderReq.getAddAddressReq().getUserId());
+
+        emailService.sendEmail("Order Confirmation",emailId);
 
         return 1;
     }

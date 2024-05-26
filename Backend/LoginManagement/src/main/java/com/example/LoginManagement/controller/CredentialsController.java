@@ -19,4 +19,10 @@ public class CredentialsController {
 
         return res;
     }
+
+    @GetMapping("/getEmailId/{id}")
+    public String getEmailId(@PathVariable("id") int id) {
+        String emailId=credentialsService.getEmailId(id);
+        return emailId;
+    }
 }

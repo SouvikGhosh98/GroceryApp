@@ -13,7 +13,7 @@ const Login = () => {
     // Handle OTP submission here
     console.log('Submitted OTP:', otp);
 
-    await axios.post('http://localhost:8080/login-service/login', { email: userEmail, otp: parseInt(otp)})
+    await axios.post('http://localhost:8085/login-service/login', { email: userEmail, otp: parseInt(otp)})
     .then(response => {
       // Handle response
       console.log('Response:', response.data);
@@ -63,7 +63,7 @@ const Login = () => {
                 <input
                   type="text"
                   name="inputname"
-                  placeholder="Enter Mobile no..."
+                  placeholder="Enter Email ID..."
                   className="block w-56 rounded-md py-2 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
                   onChange={(e) => setUserEmail(e.target.value)}
                 />
