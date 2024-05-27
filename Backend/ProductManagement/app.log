@@ -1,68 +1,69 @@
-2024-05-26T11:08:18.778+05:30  INFO 20104 --- [ProductManagement] [main] c.e.P.ProductManagementApplication       : Starting ProductManagementApplication using Java 17.0.11 with PID 20104 (D:\GroceryApp\Backend\ProductManagement\target\classes started by SOUVIK GHOSH in D:\GroceryApp\Backend\ProductManagement)
-2024-05-26T11:08:18.785+05:30  INFO 20104 --- [ProductManagement] [main] c.e.P.ProductManagementApplication       : No active profile set, falling back to 1 default profile: "default"
-2024-05-26T11:08:20.231+05:30  INFO 20104 --- [ProductManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-26T11:08:20.497+05:30  INFO 20104 --- [ProductManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 254 ms. Found 2 JPA repository interfaces.
-2024-05-26T11:08:20.784+05:30  INFO 20104 --- [ProductManagement] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7b716847-58cb-3115-95df-dad9ab7aabd9
-2024-05-26T11:08:20.998+05:30  WARN 20104 --- [ProductManagement] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
-2024-05-26T11:08:21.001+05:30  WARN 20104 --- [ProductManagement] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
-2024-05-26T11:08:21.317+05:30  INFO 20104 --- [ProductManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2024-05-26T11:08:21.334+05:30  INFO 20104 --- [ProductManagement] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-26T11:08:21.334+05:30  INFO 20104 --- [ProductManagement] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-26T11:08:21.465+05:30  INFO 20104 --- [ProductManagement] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-26T11:08:21.691+05:30  INFO 20104 --- [ProductManagement] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2856 ms
-2024-05-26T11:08:21.997+05:30  INFO 20104 --- [ProductManagement] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-26T11:08:22.098+05:30  INFO 20104 --- [ProductManagement] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-26T11:08:22.151+05:30  INFO 20104 --- [ProductManagement] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-26T11:08:22.486+05:30  INFO 20104 --- [ProductManagement] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-26T11:08:22.532+05:30  INFO 20104 --- [ProductManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-26T11:08:23.212+05:30  INFO 20104 --- [ProductManagement] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@261a66b8
-2024-05-26T11:08:23.218+05:30  INFO 20104 --- [ProductManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-26T11:08:25.649+05:30  INFO 20104 --- [ProductManagement] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-26T11:08:25.856+05:30  INFO 20104 --- [ProductManagement] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-26T11:08:26.278+05:30  WARN 20104 --- [ProductManagement] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-26T11:08:28.278+05:30  INFO 20104 --- [ProductManagement] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2024-05-26T11:08:29.592+05:30  INFO 20104 --- [ProductManagement] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2024-05-26T11:08:29.627+05:30  INFO 20104 --- [ProductManagement] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2024-05-26T11:08:29.674+05:30  WARN 20104 --- [ProductManagement] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2024-05-26T11:08:29.731+05:30  INFO 20104 --- [ProductManagement] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2024-05-26T11:08:29.779+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2024-05-26T11:08:29.785+05:30  INFO 20104 --- [ProductManagement] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:08:29.819+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2024-05-26T11:08:29.819+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2024-05-26T11:08:29.819+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2024-05-26T11:08:29.819+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2024-05-26T11:08:29.821+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2024-05-26T11:08:29.821+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2024-05-26T11:08:29.821+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2024-05-26T11:08:30.316+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2024-05-26T11:08:30.320+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2024-05-26T11:08:30.323+05:30  INFO 20104 --- [ProductManagement] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2024-05-26T11:08:30.329+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1716701910327 with initial instances count: 4
-2024-05-26T11:08:30.331+05:30  INFO 20104 --- [ProductManagement] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCTMANAGEMENT with eureka with status UP
-2024-05-26T11:08:30.332+05:30  INFO 20104 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1716701910332, current=UP, previous=STARTING]
-2024-05-26T11:08:30.334+05:30  INFO 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081: registering service...
-2024-05-26T11:08:30.369+05:30  INFO 20104 --- [ProductManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2024-05-26T11:08:30.371+05:30  INFO 20104 --- [ProductManagement] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
-2024-05-26T11:08:30.389+05:30  INFO 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081 - registration status: 204
-2024-05-26T11:08:31.577+05:30  INFO 20104 --- [ProductManagement] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2024-05-26T11:08:31.587+05:30  INFO 20104 --- [ProductManagement] [main] c.e.P.ProductManagementApplication       : Started ProductManagementApplication in 16.993 seconds (process running for 22.382)
-2024-05-26T11:13:29.952+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:14:18.693+05:30  INFO 20104 --- [ProductManagement] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-26T11:14:18.699+05:30  INFO 20104 --- [ProductManagement] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-26T11:14:18.818+05:30  INFO 20104 --- [ProductManagement] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 117 ms
-2024-05-26T11:14:20.498+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+2024-05-27T11:40:40.082+05:30  INFO 23600 --- [ProductManagement] [main] c.e.P.ProductManagementApplication       : Starting ProductManagementApplication using Java 17.0.11 with PID 23600 (D:\GroceryApp\Backend\ProductManagement\target\classes started by SOUVIK GHOSH in D:\GroceryApp\Backend\ProductManagement)
+2024-05-27T11:40:40.095+05:30  INFO 23600 --- [ProductManagement] [main] c.e.P.ProductManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-05-27T11:40:41.350+05:30  INFO 23600 --- [ProductManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-27T11:40:41.701+05:30  INFO 23600 --- [ProductManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 334 ms. Found 2 JPA repository interfaces.
+2024-05-27T11:40:42.107+05:30  INFO 23600 --- [ProductManagement] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7b716847-58cb-3115-95df-dad9ab7aabd9
+2024-05-27T11:40:42.352+05:30  WARN 23600 --- [ProductManagement] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-27T11:40:42.357+05:30  WARN 23600 --- [ProductManagement] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-27T11:40:42.757+05:30  INFO 23600 --- [ProductManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-05-27T11:40:42.776+05:30  INFO 23600 --- [ProductManagement] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27T11:40:42.777+05:30  INFO 23600 --- [ProductManagement] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-27T11:40:43.154+05:30  INFO 23600 --- [ProductManagement] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27T11:40:43.154+05:30  INFO 23600 --- [ProductManagement] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2980 ms
+2024-05-27T11:40:43.474+05:30  INFO 23600 --- [ProductManagement] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-27T11:40:43.634+05:30  INFO 23600 --- [ProductManagement] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-27T11:40:43.713+05:30  INFO 23600 --- [ProductManagement] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-27T11:40:44.240+05:30  INFO 23600 --- [ProductManagement] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-27T11:40:44.300+05:30  INFO 23600 --- [ProductManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27T11:40:45.132+05:30  INFO 23600 --- [ProductManagement] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73dbe25
+2024-05-27T11:40:45.137+05:30  INFO 23600 --- [ProductManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27T11:40:46.991+05:30  INFO 23600 --- [ProductManagement] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-27T11:40:47.302+05:30  INFO 23600 --- [ProductManagement] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-27T11:40:47.977+05:30  WARN 23600 --- [ProductManagement] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-27T11:40:49.998+05:30  INFO 23600 --- [ProductManagement] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-05-27T11:40:51.353+05:30  INFO 23600 --- [ProductManagement] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-05-27T11:40:51.463+05:30  INFO 23600 --- [ProductManagement] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-05-27T11:40:51.676+05:30  WARN 23600 --- [ProductManagement] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-05-27T11:40:51.795+05:30  INFO 23600 --- [ProductManagement] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-05-27T11:40:51.913+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-05-27T11:40:51.922+05:30  INFO 23600 --- [ProductManagement] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T11:40:52.005+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-05-27T11:40:52.005+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-05-27T11:40:52.005+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-05-27T11:40:52.006+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-05-27T11:40:52.006+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-05-27T11:40:52.006+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-05-27T11:40:52.006+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-05-27T11:40:53.875+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-05-27T11:40:53.879+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-05-27T11:40:53.884+05:30  INFO 23600 --- [ProductManagement] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-05-27T11:40:53.893+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1716790253890 with initial instances count: 0
+2024-05-27T11:40:53.899+05:30  INFO 23600 --- [ProductManagement] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCTMANAGEMENT with eureka with status UP
+2024-05-27T11:40:53.900+05:30  INFO 23600 --- [ProductManagement] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1716790253900, current=UP, previous=STARTING]
+2024-05-27T11:40:53.904+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081: registering service...
+2024-05-27T11:40:53.959+05:30  INFO 23600 --- [ProductManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-05-27T11:40:53.961+05:30  INFO 23600 --- [ProductManagement] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2024-05-27T11:40:54.143+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081 - registration status: 204
+2024-05-27T11:40:55.257+05:30  INFO 23600 --- [ProductManagement] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-05-27T11:40:55.276+05:30  INFO 23600 --- [ProductManagement] [main] c.e.P.ProductManagementApplication       : Started ProductManagementApplication in 17.52 seconds (process running for 18.822)
+2024-05-27T11:41:23.885+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-05-27T11:41:23.885+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-05-27T11:41:23.885+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-05-27T11:41:23.885+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-05-27T11:41:23.885+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-05-27T11:41:23.885+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-05-27T11:41:23.886+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-05-27T11:41:23.915+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-05-27T11:45:26.030+05:30  INFO 23600 --- [ProductManagement] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-27T11:45:26.034+05:30  INFO 23600 --- [ProductManagement] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-27T11:45:26.279+05:30  INFO 23600 --- [ProductManagement] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 230 ms
+2024-05-27T11:45:27.814+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:14:20.498+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:14:20.498+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2024-05-27T11:45:27.814+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -73,7 +74,13 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:14:20.772+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2024-05-27T11:45:27.814+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0
+2024-05-27T11:45:27.924+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -81,7 +88,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:14:20.808+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2024-05-27T11:45:27.955+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -89,7 +96,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:14:20.812+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2024-05-27T11:45:27.955+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -97,7 +104,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:14:20.814+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2024-05-27T11:45:27.955+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -105,7 +112,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:14:20.990+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T11:45:28.099+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -121,7 +128,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:14:25.326+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T11:45:28.116+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -137,7 +144,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:14:25.334+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T11:45:28.136+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -153,7 +160,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:14:25.345+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T11:45:28.144+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -169,7 +176,14 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:16:22.475+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+2024-05-27T11:45:52.030+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T11:48:11.410+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0
+2024-05-27T11:48:11.410+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -180,116 +194,116 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:16:22.475+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+2024-05-27T11:48:11.410+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:16:22.485+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+2024-05-27T11:48:11.415+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:48:11.418+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:48:11.421+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:48:11.423+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:48:11.423+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:48:11.433+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:48:11.443+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:48:11.449+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:50:52.055+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T11:53:47.981+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:16:22.574+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:16:22.594+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:16:22.596+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:16:22.597+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:16:22.620+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:16:22.639+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:16:22.646+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:16:22.652+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:18:29.997+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:20:24.613+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T11:53:47.981+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -300,115 +314,230 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:20:24.613+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T11:53:47.981+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:20:24.613+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T11:53:47.994+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:53:47.994+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:53:48.003+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:53:48.005+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:53:48.005+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T11:53:48.021+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:53:48.028+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:53:48.036+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T11:54:35.710+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T11:54:35.773+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T11:55:04.547+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T11:55:04.562+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T11:55:37.033+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T11:55:37.063+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T11:55:52.071+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T12:00:13.595+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:20:24.654+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T12:00:13.595+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:20:24.661+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:20:24.664+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:20:24.665+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:20:24.703+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:20:24.720+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:20:24.725+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:20:24.730+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:22:04.155+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+        category ce1_0
+2024-05-27T12:00:13.595+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -419,122 +548,153 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:22:04.155+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+2024-05-27T12:00:13.595+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:00:13.595+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:00:13.595+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:00:13.605+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:00:13.605+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:00:13.613+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:00:13.617+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:00:13.626+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:00:52.082+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T12:01:05.370+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:01:05.390+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:05:52.100+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T12:07:08.285+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:22:04.155+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+2024-05-27T12:07:08.285+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:22:04.213+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:22:04.223+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:22:04.226+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:22:04.228+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:22:04.237+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:22:04.255+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:22:04.262+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:22:04.268+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:23:30.036+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:23:51.392+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:23:51.392+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+2024-05-27T12:07:08.285+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -545,121 +705,188 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:23:51.392+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T12:07:08.285+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:07:08.294+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:07:08.294+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:07:08.301+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:07:08.302+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:07:08.305+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:07:08.310+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:07:08.318+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:08:31.345+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:08:31.360+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:08:31.380+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:08:31.392+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:10:52.123+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T12:11:55.934+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:23:51.458+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:23:51.466+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:23:51.468+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:23:51.469+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:23:51.506+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:23:51.529+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:23:51.533+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:23:51.538+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:24:55.150+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.934+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:24:55.150+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:24:55.150+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.934+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -670,7 +897,7 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:24:55.203+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -678,31 +905,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:24:55.210+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:24:55.210+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:24:55.213+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:24:55.233+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -718,7 +921,23 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:24:55.244+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -734,7 +953,15 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:24:55.248+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:11:55.950+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -750,7 +977,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:24:55.253+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T12:11:55.965+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -766,7 +993,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:25:00.763+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+2024-05-27T12:12:44.576+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -784,7 +1011,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         pe1_0.id=?
-2024-05-26T11:25:00.892+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T12:12:44.591+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -802,13 +1029,193 @@
             on ci1_0.id=pe1_0.category_id 
     where
         pe1_0.id=?
-2024-05-26T11:26:19.215+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:12:44.605+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:12:44.607+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:01.862+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:01.877+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:01.888+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:01.901+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:32.419+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:32.431+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:32.443+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:32.454+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:39.384+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:26:19.215+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.384+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -819,13 +1226,37 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:26:19.215+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.384+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:13:39.400+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:13:39.400+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:13:39.416+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:26:19.237+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.416+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -833,31 +1264,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:26:19.243+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:26:19.245+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:26:19.247+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:26:19.255+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.431+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -873,7 +1280,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:26:19.262+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.447+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -889,7 +1296,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:26:19.267+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.447+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -905,7 +1312,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:26:19.271+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+2024-05-27T12:13:39.447+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -921,20 +1328,79 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:28:30.078+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:28:37.759+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+2024-05-27T12:13:49.689+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
     select
-        ce1_0.id,
-        ce1_0.category_name 
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
     from
-        category ce1_0
-2024-05-26T11:28:37.759+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:13:49.705+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
     select
-        ce1_0.id,
-        ce1_0.category_name 
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
     from
-        category ce1_0
-2024-05-26T11:28:37.761+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:15:05.274+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:15:05.290+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        ci1_0.id,
+        ci1_0.category_name,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        pe1_0.id=?
+2024-05-27T12:15:31.401+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -945,7 +1411,7 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:28:37.764+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+2024-05-27T12:15:31.403+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -953,173 +1419,108 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:28:37.771+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:28:37.773+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:28:37.774+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:28:37.776+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:28:37.782+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:28:37.793+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:28:37.803+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:30:36.078+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:30:36.245+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:30:49.242+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:30:49.258+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:31:09.716+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+2024-05-27T12:15:31.419+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:31:09.716+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+2024-05-27T12:15:31.419+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:15:31.419+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:15:31.419+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0 
+    where
+        ce1_0.id=?
+2024-05-27T12:15:31.434+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        ce1_0.id,
+        ce1_0.category_name 
+    from
+        category ce1_0
+2024-05-27T12:15:31.445+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:15:31.458+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:15:31.462+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:15:31.471+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
+    select
+        pe1_0.id,
+        pe1_0.category_id,
+        pe1_0.description,
+        pe1_0.image_url,
+        pe1_0.is_available,
+        pe1_0.price,
+        pe1_0.product_name 
+    from
+        product pe1_0 
+    left join
+        category ci1_0 
+            on ci1_0.id=pe1_0.category_id 
+    where
+        ci1_0.id=?
+2024-05-27T12:15:52.137+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T12:16:24.456+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -1130,168 +1531,19 @@
         pe1_0.product_name 
     from
         product pe1_0
-2024-05-26T11:31:09.716+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.456+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:31:09.719+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:31:09.722+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:31:09.724+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:31:09.725+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:31:09.758+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:31:09.775+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:31:09.782+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:31:09.786+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:31:20.368+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:31:40.877+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:32:21.645+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.456+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
     from
         category ce1_0
-2024-05-26T11:32:21.645+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:32:21.645+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:32:21.648+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.459+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -1299,7 +1551,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:32:21.653+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.461+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -1307,23 +1559,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:32:21.655+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:32:21.656+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:32:21.684+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.461+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -1339,150 +1575,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:32:21.694+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:32:21.700+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:32:21.707+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:33:04.980+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:33:04.991+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:33:11.516+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:33:11.528+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:33:15.776+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:33:15.776+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:33:15.777+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:33:15.778+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.467+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -1490,7 +1583,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:33:15.782+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.468+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
     select
         ce1_0.id,
         ce1_0.category_name 
@@ -1498,7 +1591,7 @@
         category ce1_0 
     where
         ce1_0.id=?
-2024-05-26T11:33:15.782+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.468+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -1514,23 +1607,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:33:15.785+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:33:15.787+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:33:15.792+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.474+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -1546,7 +1623,7 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:33:15.800+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
+2024-05-27T12:16:24.480+05:30 DEBUG 23600 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
     select
         pe1_0.id,
         pe1_0.category_id,
@@ -1562,1227 +1639,88 @@
             on ci1_0.id=pe1_0.category_id 
     where
         ci1_0.id=?
-2024-05-26T11:33:15.804+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:33:24.111+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:33:24.111+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:33:24.111+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:33:24.115+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:33:24.117+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:33:24.117+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:33:24.118+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:33:24.120+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:33:24.121+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:33:24.124+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:33:24.131+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:33:30.094+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:36:18.645+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:36:18.645+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:36:18.645+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:36:18.736+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:36:18.752+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:36:18.754+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:36:18.756+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:36:18.778+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:36:18.802+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:36:18.808+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:36:18.815+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:37:45.463+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:37:45.463+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:37:45.463+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:37:45.526+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:37:45.537+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:37:45.538+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:37:45.539+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:37:45.540+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:37:45.551+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:37:45.555+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:37:45.560+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:38:30.103+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:43:30.113+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:45:22.749+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:45:22.749+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:45:22.749+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:45:22.875+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:45:22.898+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:45:22.900+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:45:22.901+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:45:22.927+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:45:22.946+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:45:22.950+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:45:22.953+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:46:49.198+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:46:49.198+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:46:49.198+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:46:49.201+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:46:49.202+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:46:49.202+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:46:49.204+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:46:49.205+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:46:49.211+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:46:49.215+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:46:49.218+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:47:49.191+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:47:49.250+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:47:56.779+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:47:56.804+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:48:27.242+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:48:27.301+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T11:48:30.156+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:48:33.541+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:48:33.541+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T11:48:33.541+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T11:48:33.544+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:48:33.548+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:48:33.549+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:48:33.549+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:48:33.549+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T11:48:33.554+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:48:33.557+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:48:33.562+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T11:53:30.165+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T11:58:32.972+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:03:33.040+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:08:33.097+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:13:33.197+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:18:33.244+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:23:33.304+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:28:33.344+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:32:22.813+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T12:32:23.031+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T12:32:32.781+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-3] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T12:32:32.792+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-8] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        ci1_0.id,
-        ci1_0.category_name,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        pe1_0.id=?
-2024-05-26T12:33:07.850+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-2] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T12:33:07.850+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0
-2024-05-26T12:33:07.850+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0
-2024-05-26T12:33:07.853+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T12:33:07.856+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T12:33:07.857+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T12:33:07.858+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-10] org.hibernate.SQL                        : 
-    select
-        ce1_0.id,
-        ce1_0.category_name 
-    from
-        category ce1_0 
-    where
-        ce1_0.id=?
-2024-05-26T12:33:07.886+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T12:33:07.902+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T12:33:07.906+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T12:33:07.908+05:30 DEBUG 20104 --- [ProductManagement] [http-nio-8081-exec-5] org.hibernate.SQL                        : 
-    select
-        pe1_0.id,
-        pe1_0.category_id,
-        pe1_0.description,
-        pe1_0.image_url,
-        pe1_0.is_available,
-        pe1_0.price,
-        pe1_0.product_name 
-    from
-        product pe1_0 
-    left join
-        category ci1_0 
-            on ci1_0.id=pe1_0.category_id 
-    where
-        ci1_0.id=?
-2024-05-26T12:33:33.400+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:38:33.450+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T12:43:33.509+05:30  INFO 20104 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2024-05-26T13:06:19.795+05:30  WARN 20104 --- [ProductManagement] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m51s896ms657µs100ns).
-2024-05-26T13:06:49.748+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCTMANAGEMENT with eureka with status DOWN
-2024-05-26T13:06:49.749+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1716709009749, current=DOWN, previous=UP]
-2024-05-26T13:06:49.750+05:30  INFO 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081: registering service...
-2024-05-26T13:06:50.026+05:30  INFO 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/PRODUCTMANAGEMENT": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/PRODUCTMANAGEMENT": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
+2024-05-27T12:20:52.147+05:30  INFO 23600 --- [ProductManagement] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-27T12:22:02.365+05:30  WARN 23600 --- [ProductManagement] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s436ms898µs200ns).
+2024-05-27T12:26:03.774+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCTMANAGEMENT with eureka with status DOWN
+2024-05-27T12:26:03.783+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1716792963783, current=DOWN, previous=UP]
+2024-05-27T12:26:03.784+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081: registering service...
+2024-05-27T12:26:03.893+05:30  INFO 23600 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081 - registration status: 204
+2024-05-27T12:26:03.986+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-27T12:26:04.058+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-27T12:26:04.141+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-27T12:26:04.143+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-05-27T12:26:07.159+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-05-27T12:26:07.224+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
+	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
+	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:298)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.acquireEndpoint(InternalExecRuntime.java:103)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:125)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:95)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
 	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:916)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:892)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1147)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
-	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:184)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:95)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
-	... 21 more
 
-2024-05-26T13:06:50.028+05:30  WARN 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRODUCTMANAGEMENT": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2024-05-26T13:06:50.062+05:30  INFO 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/PRODUCTMANAGEMENT": Socket closed stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/PRODUCTMANAGEMENT": Socket closed
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:915)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:895)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:790)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:672)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endConnect(NioSocketImpl.java:536)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:620)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:91)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:90)
-	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:123)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:184)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:95)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:70)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:112)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$0(RestTemplateTransportClientFactory.java:143)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:889)
-	... 22 more
-
-2024-05-26T13:06:50.064+05:30  WARN 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/PRODUCTMANAGEMENT": Socket closed
-2024-05-26T13:06:50.070+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-26T13:06:50.065+05:30  WARN 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081 - registration failed Cannot execute request on any known server
-
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-2.0.2.jar:2.0.2]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-
-2024-05-26T13:06:50.126+05:30  WARN 20104 --- [ProductManagement] [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
-
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:820) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-2.0.2.jar:2.0.2]
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-2.0.2.jar:2.0.2]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-
-2024-05-26T13:06:50.142+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-26T13:06:50.158+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-26T13:06:50.160+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2024-05-26T13:06:53.176+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2024-05-26T13:06:53.203+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
+2024-05-27T12:26:07.225+05:30  WARN 23600 --- [ProductManagement] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Connection pool shut down
+2024-05-27T12:26:07.249+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Connection pool shut down stacktrace=java.lang.IllegalStateException: Connection pool shut down
 	at org.apache.hc.core5.util.Asserts.check(Asserts.java:38)
 	at org.apache.hc.core5.pool.StrictConnPool.lease(StrictConnPool.java:176)
 	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.lease(PoolingHttpClientConnectionManager.java:298)
@@ -2852,8 +1790,8 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 
-2024-05-26T13:06:53.204+05:30  WARN 20104 --- [ProductManagement] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Connection pool shut down
-2024-05-26T13:06:53.204+05:30 ERROR 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081 - de-registration failedCannot execute request on any known server
+2024-05-27T12:26:07.249+05:30  WARN 23600 --- [ProductManagement] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: Connection pool shut down
+2024-05-27T12:26:07.250+05:30 ERROR 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCTMANAGEMENT/localhost:ProductManagement:8081 - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.2.jar:2.0.2]
@@ -2889,4 +1827,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.2.5.jar:3.2.5]
 	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
-2024-05-26T13:06:53.236+05:30  INFO 20104 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-05-27T12:26:07.298+05:30  INFO 23600 --- [ProductManagement] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
